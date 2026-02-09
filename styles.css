@@ -1,40 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(180deg, #e6f7f8, #cbeeee);
     color: #003b3b;
+    margin: 0;
+    padding: 0;
 }
 
-/* Títulos elegantes */
 h1, h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     color: #b89b2f; /* dorado elegante */
-    letter-spacing: 2px;
-}
-
-section {
-    padding: 90px 20px;
-    max-width: 900px;
-    margin: auto;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-/* Servicios elegantes */
+section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
 .service-list {
-    font-size: 1.1em;
-    line-height: 2.2;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2em;
+    line-height: 2;
+    color: #003b3b;
+    text-align: left;
+    margin: 0 auto;
 }
 
 .service-list span {
     color: #b89b2f;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .service-list hr {
     border: none;
     height: 1px;
     background: linear-gradient(to right, transparent, #b89b2f, transparent);
-    margin: 30px auto;
-    width: 60%;
+    margin: 40px auto;
+    width: 70%;
 }
