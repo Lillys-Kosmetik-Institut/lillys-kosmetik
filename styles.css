@@ -1,47 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Playfair+Display:wght@700&family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400&display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(180deg, #e6f7f8, #cbeeee);
-    color: #003b3b;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #e6f7f8, #c9ecec);
+  color: #003b3b;
 }
 
-h1, h2 {
-    font-family: 'Playfair Display', serif;
-    color: #b89b2f;
-    letter-spacing: 1px;
-    text-align: center;
+.hero {
+  text-align: center;
+  padding: 90px 20px;
 }
 
-section {
-    padding: 80px 20px;
-    max-width: 900px;
-    margin: auto;
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  color: #b89b2f;
+  font-size: 2.4em;
+}
+
+.hero p {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 34px;
+  border-radius: 30px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #b89b2f, #e6d48f);
+  color: #003b3b;
+  font-weight: 500;
+}
+
+.services {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
 }
 
 .services h2 {
-    font-size: 2.2em;
-    margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #b89b2f;
+  margin-bottom: 50px;
 }
 
-.service-list {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2em;
-    line-height: 2.1;
-    max-width: 700px;
-    margin: auto;
+.service-item {
+  margin-bottom: 20px;
 }
 
-.service-list span {
-    color: #b89b2f;
+.service-title {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1.1em;
+  padding: 12px 0;
+  color: #003b3b;
+  cursor: pointer;
 }
 
-.service-list hr {
-    border: none;
-    height: 1px;
-    background: linear-gradient(to right, transparent, #b89b2f, transparent);
-    margin: 40px auto;
-    width: 70%;
+.service-title:hover {
+  color: #b89b2f;
+}
+
+.service-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  font-size: 0.95em;
+}
+
+.service-info p {
+  margin: 8px 0;
+}
+
+.service-info span {
+  color: #b89b2f;
+  font-weight: 500;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #b89b2f, transparent);
+  margin: 40px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9em;
 }
