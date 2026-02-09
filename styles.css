@@ -1,186 +1,40 @@
-/* =====================
-   Fuentes elegantes
-===================== */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400&display=swap');
 
 body {
-    font-family: 'Lato', sans-serif;
-    color: #004d40;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(180deg, #e0f7fa 0%, #b2ebf2 100%);
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #e6f7f8, #cbeeee);
+    color: #003b3b;
 }
 
-/* =====================
-   Títulos
-===================== */
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    margin: 10px 0;
+/* Títulos elegantes */
+h1, h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #b89b2f; /* dorado elegante */
+    letter-spacing: 2px;
 }
 
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-}
-
-/* =====================
-   Links / botones
-===================== */
-a {
-    text-decoration: none;
-}
-
-.btn {
-    display: inline-block;
-    padding: 14px 30px;
-    background: #00796b;
-    color: white;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: background 0.3s, transform 0.3s;
-}
-
-.btn:hover {
-    background: #004d40;
-    transform: scale(1.05);
-}
-
-/* Botón WhatsApp */
-.btn.whatsapp {
-    background: #25d366;
-}
-
-.btn.whatsapp:hover {
-    transform: scale(1.05);
-}
-
-/* =====================
-   Header
-===================== */
-header {
-    background: #0097a7;
-    color: #ffffff;
-    text-align: center;
-    padding: 80px 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-header h1 {
-    font-size: 3em;
-    animation: fadeIn 2s ease-in-out;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-/* =====================
-   Mariposas animadas
-===================== */
-.mariposa {
-    position: absolute;
-    width: 60px;
-    animation: fly 15s linear infinite;
-}
-
-@keyframes fly {
-    0% {transform: translate(0,0) rotate(0deg);}
-    25% {transform: translate(300px,50px) rotate(45deg);}
-    50% {transform: translate(600px,0) rotate(0deg);}
-    75% {transform: translate(300px,-50px) rotate(-45deg);}
-    100% {transform: translate(0,0) rotate(0deg);}
-}
-
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-/* =====================
-   Sections generales
-===================== */
 section {
-    padding: 80px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 90px 20px;
+    max-width: 900px;
+    margin: auto;
     text-align: center;
 }
 
-.about p {
-    max-width: 700px;
-    margin: 0 auto;
+/* Servicios elegantes */
+.service-list {
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 2.2;
 }
 
-/* =====================
-   Cards de servicios
-===================== */
-.service-card {
-    display: inline-block;
-    background: #ffffff;
-    border-radius: 20px;
-    padding: 25px;
-    margin: 20px;
-    width: 260px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    transition: transform 0.4s, box-shadow 0.4s;
+.service-list span {
+    color: #b89b2f;
+    margin-right: 10px;
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-}
-
-/* =====================
-   Booking iframe
-===================== */
-.booking iframe {
-    border-radius: 20px;
-    max-width: 100%;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-/* =====================
-   Contacto
-===================== */
-.contact p {
-    font-size: 1.1em;
-    margin-bottom: 15px;
-}
-
-/* =====================
-   Footer
-===================== */
-footer {
-    background: #004d40;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.footer-links a {
-    color: #b2dfdb;
-    margin: 0 10px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-/* =====================
-   Legal Sections
-===================== */
-.legal {
-    padding: 40px 20px;
-    background: #e0f2f1;
-    color: #004d40;
-    margin-top: 40px;
-    border-radius: 15px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
+.service-list hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #b89b2f, transparent);
+    margin: 30px auto;
+    width: 60%;
 }
