@@ -1,14 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const items = document.querySelectorAll(".service-list p");
+document.querySelectorAll(".service-title").forEach(button => {
+  button.addEventListener("click", () => {
+    const info = button.nextElementSibling;
 
-    items.forEach((item, index) => {
-        item.style.opacity = "0";
-        item.style.transform = "translateY(20px)";
-        item.style.transition = "all 0.8s ease";
-
-        setTimeout(() => {
-            item.style.opacity = "1";
-            item.style.transform = "translateY(0)";
-        }, index * 120);
-    });
+    if (info.style.maxHeight) {
+      info.style.maxHeight = null;
+    } else {
+      info.style.maxHeight = info.scrollHeight + "px";
+    }
+  });
 });
