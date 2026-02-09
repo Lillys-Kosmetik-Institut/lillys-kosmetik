@@ -2,120 +2,83 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Lillys Kosmetik Institut</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Lillys Kosmetik Institut</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-<header class="hero">
-  <h1>Lillys Kosmetik & Fußpflege Institut</h1>
-  <p>Schönheit, Pflege & Entspannung auf höchstem Niveau</p>
-
-  <a class="book-btn"
-     href="https://www.planity.com/de-DE/lilliys-kosmetik-fusspflege-institut-60433-frankfurt-am-main"
-     target="_blank">
-     Termin buchen
-  </a>
-</header>
-
-<section class="services">
-  <h2>Unsere Leistungen</h2>
-
-  <div class="service-item">
-    <button class="service-title">Kosmetikbehandlung Basic</button>
-    <div class="service-info">
-      <p>Reinigung, Peeling, Maske & Pflege.</p>
-      <span>60 € · 60 Min</span>
+  <!-- HEADER -->
+  <header>
+    <div class="header-overlay">
+      <h1>Lillys Kosmetik Institut</h1>
+      <p>Exklusive Pflege für Hände, Füße & Wohlbefinden</p>
     </div>
-  </div>
+  </header>
 
-  <div class="service-item">
-    <button class="service-title">Kosmetikbehandlung All Inclusive</button>
-    <div class="service-info">
-      <p>Tiefenreinigung, Massage & intensive Pflege.</p>
-      <span>85 € · 75 Min</span>
-    </div>
-  </div>
+  <main>
+    <!-- SERVICIOS -->
+    <section class="services">
+      <h2>Unsere Dienstleistungen</h2>
+      <div class="service-list">
+        <div class="service">
+          <h3>Maniküre</h3>
+          <p>Professionelle Handpflege inklusive Nagelformung, Feilen, Nagelhautpflege und abschließender Pflegecreme für gesunde, gepflegte und strahlende Hände.</p>
+        </div>
+        <div class="service">
+          <h3>Pediküre</h3>
+          <p>Umfassende Fußpflege zur Entfernung von Hornhaut, Nagelpflege, Massage und Pflegeprodukten für weiche, gesunde und perfekt gepflegte Füße.</p>
+        </div>
+        <div class="service">
+          <h3>Fußpflege</h3>
+          <p>Individuelle Behandlungen zur Vorbeugung von Problemen wie Rissen, Hühneraugen oder Nagelproblemen, für Komfort und Wohlbefinden bei jedem Schritt.</p>
+        </div>
+        <div class="service">
+          <h3>Massagen</h3>
+          <p>Entspannende Ganzkörper- oder Teilkörpermassagen zur Linderung von Verspannungen, Förderung der Durchblutung, Reduktion von Stress und Harmonisierung von Körper und Geist.</p>
+        </div>
+        <div class="service">
+          <h3>Hautpflege</h3>
+          <p>Exklusive Gesichtsbehandlungen, angepasst an jeden Hauttyp, inklusive Reinigung, Peeling, Pflege und Serum, für strahlende, gesunde und revitalisierte Haut.</p>
+        </div>
+      </div>
+    </section>
 
-  <div class="service-item">
-    <button class="service-title">Green Peel Kräuterschälkur</button>
-    <div class="service-info">
-      <p>Natürliche Hauterneuerung (Classic · Energy · Fresh Up).</p>
-      <span>ab 95 €</span>
-    </div>
-  </div>
+    <!-- RESERVA -->
+    <section class="booking">
+      <h2>Buchen Sie Ihren Termin</h2>
+      <form id="bookingForm">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="E-Mail" required>
+        <input type="date" required>
+        <select required>
+          <option value="">Dienstleistung wählen</option>
+          <option value="Maniküre">Maniküre</option>
+          <option value="Pediküre">Pediküre</option>
+          <option value="Fußpflege">Fußpflege</option>
+          <option value="Massagen">Massagen</option>
+          <option value="Hautpflege">Hautpflege</option>
+        </select>
+        <button type="submit">Jetzt Buchen</button>
+      </form>
+      <p id="bookingMsg"></p>
+    </section>
 
-  <div class="divider"></div>
+    <!-- CALCULADOR DE INGRESOS -->
+    <section class="income-calculator">
+      <h2>Monatlicher Umsatzrechner (Privat)</h2>
+      <input type="number" id="serviceCount" placeholder="Anzahl gebuchter Dienstleistungen" min="0">
+      <input type="number" id="averagePrice" placeholder="Durchschnittspreis (€)" min="0">
+      <button id="calculateIncome">Berechnen</button>
+      <p id="incomeResult"></p>
+    </section>
+  </main>
 
-  <div class="service-item">
-    <button class="service-title">Sugaring Gesicht</button>
-    <div class="service-info">
-      <p>Sanfte Haarentfernung für empfindliche Haut.</p>
-      <span>ab 15 €</span>
-    </div>
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Lillys Kosmetik Institut. Alle Rechte vorbehalten.</p>
+  </footer>
 
-  <div class="service-item">
-    <button class="service-title">Wimpernverlängerung</button>
-    <div class="service-info">
-      <p>1:1 Technik & Volumentechnik.</p>
-      <span>ab 80 €</span>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="service-item">
-    <button class="service-title">Maniküre</button>
-    <div class="service-info">
-      <p>Gepflegte Hände mit Lack oder Shellac.</p>
-      <span>ab 25 €</span>
-    </div>
-  </div>
-
-  <div class="service-item">
-    <button class="service-title">Fachfußpflege & Podologie</button>
-    <div class="service-info">
-      <p>Medizinische Fußpflege für gesunde Füße.</p>
-      <span>ab 35 €</span>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="service-item">
-    <button class="service-title">Hot Stone Massage</button>
-    <div class="service-info">
-      <p>Tiefenentspannung mit warmen Steinen.</p>
-      <span>60 €</span>
-    </div>
-  </div>
-
-  <div class="service-item">
-    <button class="service-title">Rückenmassage</button>
-    <div class="service-info">
-      <p>Löst Verspannungen & Stress.</p>
-      <span>35 €</span>
-    </div>
-  </div>
-
-  <div class="service-item">
-    <button class="service-title">Fußreflexzonenmassage</button>
-    <div class="service-info">
-      <p>Aktiviert Körper & Energie.</p>
-      <span>40 €</span>
-    </div>
-  </div>
-
-</section>
-
-<footer>
-  <p>© Lillys Kosmetik Institut · Frankfurt am Main</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
