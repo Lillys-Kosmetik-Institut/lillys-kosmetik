@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lilly’s Kosmetik Institut</title>
 
+<!-- FUENTES ELEGANTES -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
@@ -17,7 +18,6 @@
 }
 
 body{
-  <h1 style="color:white">SI SE VE ESTO, TODO FUNCIONA</h1>
   margin:0;
   background:linear-gradient(180deg,var(--bg-dark),#11141b);
   font-family:'Inter',sans-serif;
@@ -75,10 +75,15 @@ h2{
   text-align:left;
   cursor:pointer;
   position:relative;
+  transition: background 0.3s;
+}
+
+.group button:hover{
+  background: rgba(201,178,125,0.1);
 }
 
 .group button::after{
-  content:"✦";
+  content:"🦋";
   position:absolute;
   right:26px;
   opacity:.6;
@@ -116,10 +121,11 @@ h2{
   text-decoration:none;
   font-weight:500;
   letter-spacing:.8px;
+  transition: transform 0.3s;
 }
 
 .whatsapp:hover{
-  opacity:.9;
+  transform: scale(1.05);
 }
 
 .info{
