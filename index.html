@@ -1,209 +1,113 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Lilly’s Kosmetik Institut</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lilly’s Kosmetik Institut</title>
 
-  <!-- FUENTES ELEGANTES -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #0b0b0b, #1a1f2b);
-      color: #e6e6e6;
-    }
+<style>
+:root{
+  --bg-dark:#0e0f12;
+  --bg-soft:#16181d;
+  --gold:#c9b27d;
+  --text:#e8e8e8;
+  --muted:#a9adb7;
+}
 
-    header {
-      text-align: center;
-      padding: 90px 20px;
-    }
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg-dark),#11141b);
+  font-family:'Inter',sans-serif;
+  color:var(--text);
+}
 
-    header h1 {
-      font-family: 'Cinzel', serif;
-      font-size: 3rem;
-      color: #d4af37;
-      letter-spacing: 3px;
-      margin-bottom: 10px;
-    }
+header{
+  padding:100px 20px 80px;
+  text-align:center;
+}
 
-    header p {
-      color: #9fbcd4;
-      font-style: italic;
-      letter-spacing: 1px;
-    }
+header h1{
+  font-family:'Playfair Display',serif;
+  color:var(--gold);
+  font-size:3.2rem;
+  letter-spacing:1px;
+  margin-bottom:12px;
+}
 
-    section.services {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
-    }
+header p{
+  color:var(--muted);
+  font-style:italic;
+  letter-spacing:.5px;
+}
 
-    section.services h2 {
-      text-align: center;
-      font-family: 'Cinzel', serif;
-      color: #d4af37;
-      margin-bottom: 50px;
-    }
+section{
+  max-width:900px;
+  margin:auto;
+  padding:70px 20px;
+}
 
-    .category {
-      margin-bottom: 25px;
-    }
+h2{
+  font-family:'Playfair Display',serif;
+  text-align:center;
+  color:var(--gold);
+  font-size:2.1rem;
+  margin-bottom:50px;
+}
 
-    .category button {
-      width: 100%;
-      background: rgba(212, 175, 55, 0.06);
-      border: 1px solid rgba(212, 175, 55, 0.4);
-      padding: 18px;
-      font-family: 'Cinzel', serif;
-      font-size: 1.1rem;
-      color: #d4af37;
-      cursor: pointer;
-      position: relative;
-      transition: background 0.3s;
-    }
+.group{
+  margin-bottom:28px;
+  border:1px solid rgba(201,178,125,.25);
+  background:rgba(255,255,255,.02);
+}
 
-    .category button:hover {
-      background: rgba(212, 175, 55, 0.12);
-    }
+.group button{
+  width:100%;
+  background:none;
+  border:none;
+  padding:20px 26px;
+  font-family:'Playfair Display',serif;
+  font-size:1.1rem;
+  letter-spacing:.8px;
+  color:var(--gold);
+  text-align:left;
+  cursor:pointer;
+  position:relative;
+}
 
-    .category button::after {
-      content: "🦋";
-      position: absolute;
-      right: 20px;
-      opacity: 0.6;
-    }
+.group button::after{
+  content:"✦";
+  position:absolute;
+  right:26px;
+  opacity:.6;
+}
 
-    .content {
-      display: none;
-      background: rgba(0, 0, 0, 0.45);
-      padding: 20px 30px;
-      border-left: 2px solid #d4af37;
-    }
+.content{
+  display:none;
+  padding:24px 38px;
+  background:var(--bg-soft);
+}
 
-    .content p {
-      margin: 12px 0;
-      color: #e0e0e0;
-      display: flex;
-      justify-content: space-between;
-    }
+.content p{
+  display:flex;
+  justify-content:space-between;
+  margin:14px 0;
+  color:var(--text);
+}
 
-    .content span {
-      color: #d4af37;
-    }
+.price{
+  color:var(--gold);
+}
 
-    section.contact {
-      text-align: center;
-      padding: 70px 20px;
-    }
+.contact{
+  text-align:center;
+  padding-bottom:90px;
+}
 
-    section.contact h2 {
-      font-family: 'Cinzel', serif;
-      color: #d4af37;
-      margin-bottom: 30px;
-    }
-
-    .whatsapp {
-      display: inline-block;
-      padding: 16px 45px;
-      border-radius: 50px;
-      background: linear-gradient(90deg, #d4af37, #cbb279);
-      color: #0b0b0b;
-      text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 1px;
-      transition: transform 0.3s;
-    }
-
-    .whatsapp:hover {
-      transform: scale(1.05);
-    }
-
-    .info {
-      margin-top: 20px;
-      color: #9fbcd4;
-      font-size: 0.95rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      font-size: 0.8rem;
-      color: #777;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>Lilly’s Kosmetik Institut</h1>
-  <p>Eleganz · Ruhe · Schönheit</p>
-</header>
-
-<section class="services">
-  <h2>Unsere Leistungen</h2>
-
-  <div class="category">
-    <button>KOSMETIK</button>
-    <div class="content">
-      <p>Basic Gesichtsbehandlung <span>69 €</span></p>
-      <p>All Inclusive Behandlung <span>89 €</span></p>
-      <p>Green Peel Fresh Up <span>119 €</span></p>
-      <p>Green Peel Energy <span>159 €</span></p>
-      <p>Green Peel Classic <span>259 €</span></p>
-    </div>
-  </div>
-
-  <div class="category">
-    <button>MANIKÜRE & PEDIKÜRE</button>
-    <div class="content">
-      <p>Maniküre ohne Lack <span>35 €</span></p>
-      <p>Maniküre mit Lack <span>40 €</span></p>
-      <p>Shellac Maniküre <span>55 €</span></p>
-      <p>Medizinische Fußpflege <span>45 €</span></p>
-    </div>
-  </div>
-
-  <div class="category">
-    <button>MASSAGEN</button>
-    <div class="content">
-      <p>Rückenmassage <span>45 €</span></p>
-      <p>Hot Stone Massage <span>75 €</span></p>
-      <p>Fußreflexzonenmassage <span>55 €</span></p>
-    </div>
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Termin & Kontakt</h2>
-
-  <a class="whatsapp" href="https://wa.me/4915904810907" target="_blank">
-    Termin via WhatsApp
-  </a>
-
-  <div class="info">
-    ✉ lilianapest@yahoo.de
-  </div>
-</section>
-
-<footer>
-  © Lilly’s Kosmetik Institut · Elegance & Care
-</footer>
-
-<script>
-  const buttons = document.querySelectorAll(".category button");
-
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const content = btn.nextElementSibling;
-      content.style.display =
-        content.style.display === "block" ? "none" : "block";
-    });
-  });
-</script>
-
-</body>
-</html>
+.whatsapp{
+  display:inline-block;
+  margin:30px 0;
+  padding:18px 55px;
+  border-radius:40px;
+  background:linear-gradient(90deg,var(--gold
