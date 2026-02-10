@@ -110,4 +110,114 @@ h2{
   margin:30px 0;
   padding:18px 55px;
   border-radius:40px;
-  background:linear-gradient(90deg,var(--gold
+  background:linear-gradient(90deg,var(--gold),#bfa56d);
+  color:#0e0f12;
+  text-decoration:none;
+  font-weight:500;
+  letter-spacing:.8px;
+}
+
+.whatsapp:hover{
+  opacity:.9;
+}
+
+.info{
+  color:var(--muted);
+  margin-top:10px;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  font-size:.8rem;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Lilly’s Kosmetik Institut</h1>
+  <p>Ästhetik · Ruhe · Vertrauen</p>
+</header>
+
+<section>
+<h2>Behandlungen</h2>
+
+<div class="group">
+<button>KOSMETIK</button>
+<div class="content">
+<p>Basic Gesichtsbehandlung <span class="price">69 €</span></p>
+<p>Intensiv Reinigung <span class="price">79 €</span></p>
+<p>Anti-Aging Behandlung <span class="price">95 €</span></p>
+<p>All Inclusive Behandlung <span class="price">89 €</span></p>
+<p>Green Peel Fresh Up <span class="price">119 €</span></p>
+<p>Green Peel Energy <span class="price">159 €</span></p>
+<p>Green Peel Classic <span class="price">259 €</span></p>
+</div>
+</div>
+
+<div class="group">
+<button>MANIKÜRE</button>
+<div class="content">
+<p>Klassische Maniküre <span class="price">35 €</span></p>
+<p>Maniküre mit Lack <span class="price">40 €</span></p>
+<p>Shellac Maniküre <span class="price">55 €</span></p>
+</div>
+</div>
+
+<div class="group">
+<button>PEDIKÜRE & PODOLOGIE</button>
+<div class="content">
+<p>Fachfußpflege <span class="price">45 €</span></p>
+<p>Medizinische Fußpflege <span class="price">55 €</span></p>
+<p>Problemnägel / Hühneraugen <span class="price">ab 35 €</span></p>
+</div>
+</div>
+
+<div class="group">
+<button>MASSAGEN</button>
+<div class="content">
+<p>Rückenmassage <span class="price">45 €</span></p>
+<p>Hot Stone Massage <span class="price">75 €</span></p>
+<p>Fußreflexzonenmassage <span class="price">55 €</span></p>
+</div>
+</div>
+
+<div class="group">
+<button>WIMPERN & SUGARING</button>
+<div class="content">
+<p>Wimpernverlängerung 1:1 <span class="price">95 €</span></p>
+<p>Volumentechnik <span class="price">125 €</span></p>
+<p>Sugaring Gesicht <span class="price">ab 15 €</span></p>
+</div>
+</div>
+
+</section>
+
+<section class="contact">
+<h2>Termin vereinbaren</h2>
+
+<a class="whatsapp" href="https://wa.me/4915904810907" target="_blank">
+Termin per WhatsApp
+</a>
+
+<div class="info">✉ lilianapest@yahoo.de</div>
+</section>
+
+<footer>
+© Lilly’s Kosmetik Institut
+</footer>
+
+<script>
+document.querySelectorAll(".group button").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const c=btn.nextElementSibling;
+    c.style.display=c.style.display==="block"?"none":"block";
+  });
+});
+</script>
+
+</body>
+</html>
