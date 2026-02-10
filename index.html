@@ -2,133 +2,169 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lillys Kosmetik Institut</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- CONEXIÓN AL CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/4915904810907" class="whatsapp-btn" target="_blank">
+  💬 WhatsApp
+</a>
 
 <!-- HEADER -->
 <header class="hero">
-  <h1>Lillys Kosmetik & Fußpflege Institut</h1>
-  <p>Schönheit, Pflege & Entspannung in Frankfurt am Main</p>
+  <div class="hero-content">
+    <h1>Lillys Kosmetik & Fußpflege Institut</h1>
+    <p>Schönheit, Pflege & Wohlbefinden in Frankfurt am Main</p>
+    <a href="#booking" class="btn-main">Termin buchen</a>
+  </div>
+  <img src="images/spa-header.jpg" alt="Spa header" class="hero-img">
 </header>
 
 <!-- SERVICIOS -->
-<section class="services">
+<section class="services-section">
   <h2>Unsere Leistungen</h2>
 
-  <div class="service-item">
-    <button class="service-title">Kosmetikbehandlung Basic</button>
-    <div class="service-info">
-      <p>Sanfte Reinigung, Peeling, Maske und Abschlusspflege.</p>
-      <span>60 € · 60 Minuten</span>
+  <!-- KOSMETIK -->
+  <div class="service-category">
+    <button class="service-cat-btn">KOSMETIK</button>
+    <div class="service-list">
+
+      <div class="service-item">
+        <button class="service-title">Kosmetikbehandlung Basic</button>
+        <div class="service-info">
+          <p>Sanfte Reinigung, Peeling, Maske und Abschlusspflege.</p><span>60 € · 60 Min</span>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <button class="service-title">Kosmetikbehandlung All Inclusive</button>
+        <div class="service-info">
+          <p>Tiefenreinigung, Massage & intensive Pflege.</p><span>85 € · 75 Min</span>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <button class="service-title">Green Peel Kräuterschälkur</button>
+        <div class="service-info">
+          <p>Natürliche Hauterneuerung (Classic · Energy · Fresh Up).</p><span>ab 95 €</span>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div class="service-item">
-    <button class="service-title">Kosmetikbehandlung All Inclusive</button>
-    <div class="service-info">
-      <p>Tiefenreinigung, Massage und intensive Pflege.</p>
-      <span>85 € · 75 Minuten</span>
+  <!-- HAARENTFERNUNG -->
+  <div class="service-category">
+    <button class="service-cat-btn">HAARENTFERNUNG</button>
+    <div class="service-list">
+
+      <div class="service-item">
+        <button class="service-title">Sugaring Gesicht</button>
+        <div class="service-info">
+          <p>Sanfte Haarentfernung Oberlippe, Kinn, komplett.</p><span>ab 15 €</span>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div class="service-item">
-    <button class="service-title">Green Peel Kräuterschälkur</button>
-    <div class="service-info">
-      <p>Natürliche Hauterneuerung mit Kräutern.</p>
-      <span>ab 95 €</span>
+  <!-- AUGEN & WIMPERN -->
+  <div class="service-category">
+    <button class="service-cat-btn">AUGEN & WIMPERN</button>
+    <div class="service-list">
+      <div class="service-item">
+        <button class="service-title">Wimpernverlängerung 1:1</button>
+        <div class="service-info">
+          <p>Zarte Verlängerung für einen natürlichen Look.</p><span>ab 80 €</span>
+        </div>
+      </div>
+      <div class="service-item">
+        <button class="service-title">Wimpernverlängerung Volumentechnik</button>
+        <div class="service-info">
+          <p>Mehr Volumen für intensiven Ausdruck.</p><span>ab 95 €</span>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="service-item">
-    <button class="service-title">Sugaring Gesicht</button>
-    <div class="service-info">
-      <p>Sanfte Haarentfernung für das Gesicht.</p>
-      <span>ab 15 €</span>
+  <!-- NÄGEL -->
+  <div class="service-category">
+    <button class="service-cat-btn">NÄGEL</button>
+    <div class="service-list">
+      <div class="service-item">
+        <button class="service-title">Maniküre Basis</button>
+        <div class="service-info">
+          <p>Gepflegte Hände mit oder ohne Lack.</p><span>ab 25 €</span>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="service-item">
-    <button class="service-title">Wimpernverlängerung</button>
-    <div class="service-info">
-      <p>1:1 Technik oder Volumentechnik.</p>
-      <span>ab 80 €</span>
+  <!-- FUSSPFLEGE -->
+  <div class="service-category">
+    <button class="service-cat-btn">FUSSPFLEGE</button>
+    <div class="service-list">
+      <div class="service-item">
+        <button class="service-title">Fachfußpflege & Podologie</button>
+        <div class="service-info">
+          <p>Medizinische Fußpflege für gesunde Füße.</p><span>ab 35 €</span>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="divider"></div>
-
-  <div class="service-item">
-    <button class="service-title">Maniküre</button>
-    <div class="service-info">
-      <p>Gepflegte Hände mit oder ohne Lack.</p>
-      <span>ab 35 €</span>
-    </div>
-  </div>
-
-  <div class="service-item">
-    <button class="service-title">Fachfußpflege & Podologie</button>
-    <div class="service-info">
-      <p>Medizinische Fußpflege für gesunde Füße.</p>
-      <span>ab 35 €</span>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="service-item">
-    <button class="service-title">Hot Stone Massage</button>
-    <div class="service-info">
-      <p>Tiefenentspannung mit warmen Basaltsteinen.</p>
-      <span>60 €</span>
+  <!-- MASSAGEN -->
+  <div class="service-category">
+    <button class="service-cat-btn">MASSAGEN</button>
+    <div class="service-list">
+      <div class="service-item">
+        <button class="service-title">Hot Stone Massage</button>
+        <div class="service-info">
+          <p>Tiefenentspannung mit warmen Basaltsteinen.</p><span>60 €</span>
+        </div>
+      </div>
     </div>
   </div>
 
 </section>
 
-<!-- RESERVAS -->
-<section class="booking">
+<!-- SECCIÓN RESERVA -->
+<section id="booking" class="booking-section">
   <h2>Termin buchen</h2>
-
-  <form action="mailto:Lilianapest@yahoo.de" method="post" enctype="text/plain">
-    <label>Name</label>
+  <form action="mailto:Lilianapest@zahoo.de" method="post" enctype="text/plain">
+    <label>Name:</label>
     <input type="text" name="Name" required>
 
-    <label>Telefon oder E-Mail</label>
-    <input type="text" name="015904810907" required>
+    <label>Telefon oder E-Mail:</label>
+    <input type="text" name="Kontakt" required>
 
-    <label>Service</label>
+    <label>Gewünschter Service:</label>
     <select name="Service">
       <option>Kosmetikbehandlung Basic</option>
       <option>Kosmetikbehandlung All Inclusive</option>
-      <option>Green Peel</option>
+      <option>Green Peel Kräuterschälkur</option>
       <option>Sugaring Gesicht</option>
-      <option>Wimpernverlängerung</option>
-      <option>Maniküre</option>
-      <option>Fachfußpflege</option>
+      <option>Wimpernverlängerung 1:1</option>
+      <option>Wimpernverlängerung Volumentechnik</option>
+      <option>Maniküre Basis</option>
+      <option>Fachfußpflege & Podologie</option>
       <option>Hot Stone Massage</option>
     </select>
 
-    <label>Datum & Uhrzeit</label>
+    <label>Datum & Uhrzeit:</label>
     <input type="datetime-local" name="Termin" required>
 
-    <button type="submit">Termin anfragen</button>
+    <button type="submit" class="btn-main">Termin anfragen</button>
   </form>
 </section>
 
 <footer>
-  <p>© Lillys Kosmetik Institut · Alt-Eschersheim 39, 60433 Frankfurt am Main</p>
+  <p>© 2026 Lillys Kosmetik Institut · Frankfurt am Main</p>
 </footer>
 
-<!-- CONEXIÓN AL JS -->
 <script src="script.js"></script>
-
 </body>
 </html>
