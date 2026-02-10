@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400&display=swap');
 
 body {
   margin: 0;
@@ -7,55 +7,137 @@ body {
   color: #003b3b;
 }
 
+/* BOTÓN WhatsApp flotante */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25d366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-size: 20px;
+  z-index: 999;
+}
+
+/* HEADER */
 .hero {
   text-align: center;
   padding: 90px 20px;
+  background: url("images/spa-header.jpg") center/cover no-repeat;
+  color: white;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  color: #b89b2f;
+  font-size: 2.8em;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
 }
 
-.services {
-  max-width: 900px;
+.btn-main {
+  background: linear-gradient(135deg, #b89b2f, #e6d48f);
+  color: #003b3b;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* SERVICIOS */
+.services-section {
+  max-width: 920px;
   margin: auto;
   padding: 60px 20px;
 }
 
-.service-title {
-  background: none;
-  border: none;
-  font-size: 1.1em;
-  cursor: pointer;
-  color: #003b3b;
+.service-category {
+  margin-bottom: 18px;
 }
 
-.service-title:hover {
-  color: #b89b2f;
+.service-cat-btn {
+  width: 100%;
+  background: #004d40;
+  color: white;
+  padding: 14px;
+  font-size: 1.2em;
+  border: none;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.service-cat-btn:hover {
+  background: #00332f;
+}
+
+.service-list {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.4s ease;
+  margin-top: 6px;
+}
+
+.service-item {
+  margin: 10px 0;
+}
+
+.service-title {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 1.05em;
+  text-align: left;
+  cursor: pointer;
+  padding: 8px;
+  color: #003b3b;
 }
 
 .service-info {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.4s ease;
+  font-size: 0.95em;
+  color: #003b3b;
+  padding-left: 14px;
+  transition: max-height 0.5s ease;
 }
 
 .service-info span {
   color: #b89b2f;
+  font-weight: 500;
 }
 
-.divider {
-  height: 1px;
-  background: linear-gradient(to right, transparent, #b89b2f, transparent);
-  margin: 40px 0;
-}
-
-.booking {
-  max-width: 600px;
-  margin: 60px auto;
+/* FORMULARIO */
+.booking-section {
+  max-width: 700px;
+  margin: 50px auto;
   padding: 40px;
-  border: 1px solid #b89b2f;
-  border-radius: 15px;
   background: white;
+  border-radius: 15px;
+}
+
+.booking-section label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.booking-section input,
+.booking-section select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #003b3b;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 28px 0;
+  font-size: 0.9em;
+  background: #004d40;
+  color: white;
 }
