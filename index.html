@@ -2,169 +2,208 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lillys Kosmetik Institut</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Lilly’s Kosmetik Institut</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FUENTES ELEGANTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0b0b0b, #1a1f2b);
+      color: #e6e6e6;
+    }
+
+    header {
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      color: #d4af37;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #9fbcd4;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+
+    section.services {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    section.services h2 {
+      text-align: center;
+      font-family: 'Cinzel', serif;
+      color: #d4af37;
+      margin-bottom: 50px;
+    }
+
+    .category {
+      margin-bottom: 25px;
+    }
+
+    .category button {
+      width: 100%;
+      background: rgba(212, 175, 55, 0.06);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      padding: 18px;
+      font-family: 'Cinzel', serif;
+      font-size: 1.1rem;
+      color: #d4af37;
+      cursor: pointer;
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    .category button:hover {
+      background: rgba(212, 175, 55, 0.12);
+    }
+
+    .category button::after {
+      content: "🦋";
+      position: absolute;
+      right: 20px;
+      opacity: 0.6;
+    }
+
+    .content {
+      display: none;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 20px 30px;
+      border-left: 2px solid #d4af37;
+    }
+
+    .content p {
+      margin: 12px 0;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content span {
+      color: #d4af37;
+    }
+
+    section.contact {
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    section.contact h2 {
+      font-family: 'Cinzel', serif;
+      color: #d4af37;
+      margin-bottom: 30px;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      padding: 16px 45px;
+      border-radius: 50px;
+      background: linear-gradient(90deg, #d4af37, #cbb279);
+      color: #0b0b0b;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.05);
+    }
+
+    .info {
+      margin-top: 20px;
+      color: #9fbcd4;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- WhatsApp flotante -->
-<a href="https://wa.me/4915904810907" class="whatsapp-btn" target="_blank">
-  💬 WhatsApp
-</a>
-
-<!-- HEADER -->
-<header class="hero">
-  <div class="hero-content">
-    <h1>Lillys Kosmetik & Fußpflege Institut</h1>
-    <p>Schönheit, Pflege & Wohlbefinden in Frankfurt am Main</p>
-    <a href="#booking" class="btn-main">Termin buchen</a>
-  </div>
-  <img src="images/spa-header.jpg" alt="Spa header" class="hero-img">
+<header>
+  <h1>Lilly’s Kosmetik Institut</h1>
+  <p>Eleganz · Ruhe · Schönheit</p>
 </header>
 
-<!-- SERVICIOS -->
-<section class="services-section">
+<section class="services">
   <h2>Unsere Leistungen</h2>
 
-  <!-- KOSMETIK -->
-  <div class="service-category">
-    <button class="service-cat-btn">KOSMETIK</button>
-    <div class="service-list">
-
-      <div class="service-item">
-        <button class="service-title">Kosmetikbehandlung Basic</button>
-        <div class="service-info">
-          <p>Sanfte Reinigung, Peeling, Maske und Abschlusspflege.</p><span>60 € · 60 Min</span>
-        </div>
-      </div>
-
-      <div class="service-item">
-        <button class="service-title">Kosmetikbehandlung All Inclusive</button>
-        <div class="service-info">
-          <p>Tiefenreinigung, Massage & intensive Pflege.</p><span>85 € · 75 Min</span>
-        </div>
-      </div>
-
-      <div class="service-item">
-        <button class="service-title">Green Peel Kräuterschälkur</button>
-        <div class="service-info">
-          <p>Natürliche Hauterneuerung (Classic · Energy · Fresh Up).</p><span>ab 95 €</span>
-        </div>
-      </div>
-
+  <div class="category">
+    <button>KOSMETIK</button>
+    <div class="content">
+      <p>Basic Gesichtsbehandlung <span>69 €</span></p>
+      <p>All Inclusive Behandlung <span>89 €</span></p>
+      <p>Green Peel Fresh Up <span>119 €</span></p>
+      <p>Green Peel Energy <span>159 €</span></p>
+      <p>Green Peel Classic <span>259 €</span></p>
     </div>
   </div>
 
-  <!-- HAARENTFERNUNG -->
-  <div class="service-category">
-    <button class="service-cat-btn">HAARENTFERNUNG</button>
-    <div class="service-list">
-
-      <div class="service-item">
-        <button class="service-title">Sugaring Gesicht</button>
-        <div class="service-info">
-          <p>Sanfte Haarentfernung Oberlippe, Kinn, komplett.</p><span>ab 15 €</span>
-        </div>
-      </div>
-
+  <div class="category">
+    <button>MANIKÜRE & PEDIKÜRE</button>
+    <div class="content">
+      <p>Maniküre ohne Lack <span>35 €</span></p>
+      <p>Maniküre mit Lack <span>40 €</span></p>
+      <p>Shellac Maniküre <span>55 €</span></p>
+      <p>Medizinische Fußpflege <span>45 €</span></p>
     </div>
   </div>
 
-  <!-- AUGEN & WIMPERN -->
-  <div class="service-category">
-    <button class="service-cat-btn">AUGEN & WIMPERN</button>
-    <div class="service-list">
-      <div class="service-item">
-        <button class="service-title">Wimpernverlängerung 1:1</button>
-        <div class="service-info">
-          <p>Zarte Verlängerung für einen natürlichen Look.</p><span>ab 80 €</span>
-        </div>
-      </div>
-      <div class="service-item">
-        <button class="service-title">Wimpernverlängerung Volumentechnik</button>
-        <div class="service-info">
-          <p>Mehr Volumen für intensiven Ausdruck.</p><span>ab 95 €</span>
-        </div>
-      </div>
+  <div class="category">
+    <button>MASSAGEN</button>
+    <div class="content">
+      <p>Rückenmassage <span>45 €</span></p>
+      <p>Hot Stone Massage <span>75 €</span></p>
+      <p>Fußreflexzonenmassage <span>55 €</span></p>
     </div>
   </div>
-
-  <!-- NÄGEL -->
-  <div class="service-category">
-    <button class="service-cat-btn">NÄGEL</button>
-    <div class="service-list">
-      <div class="service-item">
-        <button class="service-title">Maniküre Basis</button>
-        <div class="service-info">
-          <p>Gepflegte Hände mit oder ohne Lack.</p><span>ab 25 €</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FUSSPFLEGE -->
-  <div class="service-category">
-    <button class="service-cat-btn">FUSSPFLEGE</button>
-    <div class="service-list">
-      <div class="service-item">
-        <button class="service-title">Fachfußpflege & Podologie</button>
-        <div class="service-info">
-          <p>Medizinische Fußpflege für gesunde Füße.</p><span>ab 35 €</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MASSAGEN -->
-  <div class="service-category">
-    <button class="service-cat-btn">MASSAGEN</button>
-    <div class="service-list">
-      <div class="service-item">
-        <button class="service-title">Hot Stone Massage</button>
-        <div class="service-info">
-          <p>Tiefenentspannung mit warmen Basaltsteinen.</p><span>60 €</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </section>
 
-<!-- SECCIÓN RESERVA -->
-<section id="booking" class="booking-section">
-  <h2>Termin buchen</h2>
-  <form action="mailto:Lilianapest@zahoo.de" method="post" enctype="text/plain">
-    <label>Name:</label>
-    <input type="text" name="Name" required>
+<section class="contact">
+  <h2>Termin & Kontakt</h2>
 
-    <label>Telefon oder E-Mail:</label>
-    <input type="text" name="Kontakt" required>
+  <a class="whatsapp" href="https://wa.me/4915904810907" target="_blank">
+    Termin via WhatsApp
+  </a>
 
-    <label>Gewünschter Service:</label>
-    <select name="Service">
-      <option>Kosmetikbehandlung Basic</option>
-      <option>Kosmetikbehandlung All Inclusive</option>
-      <option>Green Peel Kräuterschälkur</option>
-      <option>Sugaring Gesicht</option>
-      <option>Wimpernverlängerung 1:1</option>
-      <option>Wimpernverlängerung Volumentechnik</option>
-      <option>Maniküre Basis</option>
-      <option>Fachfußpflege & Podologie</option>
-      <option>Hot Stone Massage</option>
-    </select>
-
-    <label>Datum & Uhrzeit:</label>
-    <input type="datetime-local" name="Termin" required>
-
-    <button type="submit" class="btn-main">Termin anfragen</button>
-  </form>
+  <div class="info">
+    ✉ lilianapest@yahoo.de
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Lillys Kosmetik Institut · Frankfurt am Main</p>
+  © Lilly’s Kosmetik Institut · Elegance & Care
 </footer>
 
-<script src="script.js"></script>
+<script>
+  const buttons = document.querySelectorAll(".category button");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const content = btn.nextElementSibling;
+      content.style.display =
+        content.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
+
 </body>
 </html>
